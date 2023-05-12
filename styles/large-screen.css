@@ -1,0 +1,149 @@
+@import url("https://fonts.googleapis.com/css2?family=Alata&family=Montserrat:wght@100;400;900&family=Ubuntu:wght@300;400;500;700&display=swap");
+body {
+  font-family: "Alata", sans-serif;
+}
+
+h1,
+h2,
+h3 {
+  text-transform: uppercase;
+}
+
+h1 {
+  font-size: 3.5rem;
+}
+
+h2 {
+  font-size: 2.5rem;
+  color: hsl(0, 0%, 41%);
+}
+
+h3 {
+  font-size: 2rem;
+}
+
+p,
+li,
+a,
+button {
+  font-size: 1rem;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  padding: 0 30px;
+}
+
+img {
+  display: block;
+}
+
+span {
+  font-weight: lighter;
+}
+
+a {
+  text-decoration: none;
+  color: hsl(0, 0%, 100%);
+}
+
+@media screen and (min-width: 990px) {
+  .container {
+    width: 900px;
+    padding: 0;
+    margin: 0 auto;
+  }
+  .hero {
+    height: 650px;
+  }
+  .hero nav {
+    display: block;
+  }
+  .hero nav ul {
+    display: flex;
+    gap: 15px;
+  }
+  .hero nav ul a {
+    cursor: pointer;
+    padding-bottom: 10px;
+    position: relative;
+  }
+  .hero nav ul a:hover::before {
+    content: " ";
+    background-color: hsl(0, 0%, 100%);
+    width: 50%;
+    height: 2px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .hero button {
+    display: none;
+  }
+  .hero h1 {
+    width: 50%;
+    transform: translateY(-25%);
+  }
+  .interaction .container {
+    position: relative;
+  }
+  .interaction img {
+    margin: 0;
+  }
+  .interaction h2 {
+    margin: 0;
+    padding: 0;
+    padding-bottom: 15px;
+  }
+  .interaction .text {
+    background-color: hsl(0, 0%, 100%);
+    padding: 15px;
+    padding-left: 60px;
+    text-align: left;
+    width: 50%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+  .creation .container {
+    position: relative;
+    align-items: flex-start;
+  }
+  .creation .container .articleList {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .creation .container button {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  footer .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+  footer nav {
+    justify-self: end;
+  }
+  footer nav ul {
+    flex-direction: row;
+  }
+  footer p {
+    justify-self: end;
+  }
+}/*# sourceMappingURL=large-screen.css.map */

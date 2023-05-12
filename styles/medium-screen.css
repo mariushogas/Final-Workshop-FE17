@@ -1,0 +1,35 @@
+@media screen and (min-width: 650px) {
+  .creation .container .articleList {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 30px;
+  }
+  .creation .container article {
+    height: 450px;
+    background-size: cover;
+  }
+  .creation .container article:nth-of-type(1) {
+    background-image: url("../images/desktop/image-deep-earth.jpg");
+  }
+  .creation .container article:nth-of-type(2) {
+    background-image: url("../images/desktop/image-night-arcade.jpg");
+  }
+  .creation .container article:nth-of-type(3) {
+    background-image: url("../images/desktop/image-soccer-team.jpg");
+  }
+  .creation .container article:nth-of-type(4) {
+    background-image: url("../images/desktop/image-grid.jpg");
+  }
+  .creation .container article:nth-of-type(5) {
+    background-image: url("../images/desktop/image-from-above.jpg");
+  }
+  .creation .container article:nth-of-type(6) {
+    background-image: url("../images/desktop/image-pocket-borealis.jpg");
+  }
+  .creation .container article:nth-of-type(7) {
+    background-image: url("../images/desktop/image-curiosity.jpg");
+  }
+  .creation .container article:nth-of-type(8) {
+    background-image: url("../images/desktop/image-fisheye.jpg");
+  }
+}/*# sourceMappingURL=medium-screen.css.map */
